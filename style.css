@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+
+  background: linear-gradient(45deg,#0000 calc(25%/3), #004858 0 calc(50%/3),
+  #0000 0 calc(250%/3), #004858 0 calc(275%/3),
+  #0000 0),linear-gradient( 45deg,#004858 calc(25%/3), #0000 0 calc(50%/3),
+  #004858 0 25%, #0000 0 75%,
+  #004858 0 calc(250%/3), #0000 0 calc(275%/3),
+  #004858 0),
+  linear-gradient(-45deg,#0000 calc(25%/3), #004858 0 calc(50%/3),
+  #0000 0 calc(250%/3), #004858 0 calc(275%/3),
+  #0000 0),linear-gradient(-45deg,#004858 calc(25%/3), #0000 0 calc(50%/3),
+  #004858 0 25%, #0000 0 75%,
+  #004858 0 calc(250%/3), #0000 0 calc(275%/3),
+  #004858 0)
+  #005164;
+  background-size: 54px 54px;
+  background-position: 0 0, 27px  27px;
+  backdrop-filter: blur(1px);
+
+  line-height: 1.8em;
+  margin: 0px;
+
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.125em;
+  color: #0D0D0D;
+  line-height: 1.5em;
+
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.max-width-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+}
+.number-display{
+    display: grid;
+    grid-template:"a b" 55px / 2fr 1fr;
+    gap: 20px;
+    width: 100%;
+}
+.left-display{
+    background-color: #002C3E;
+    color: #F2E1D8;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    align-items: center;    
+    justify-content: flex-start;
+    border-radius: 15px;
+}
+.right-display{
+    background-color: #3CA69B;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;    
+    justify-content: flex-start;
+    border-radius: 15px;
+}
+.buttons{
+    display: grid;
+    grid-template:"a b" 180px / 2fr 4fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.inner-button-conatainer{
+    height: 100%;
+    font-size: 24px;
+}
+.number-buttons{
+    border-radius: 15px;
+    background-color: #002C3E;
+    height: 100%;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr    );
+    align-items: center;
+    justify-items: center;
+    width: auto;
+    padding: 0px 10px 0px 10px;
+    column-gap: 15px;
+}
+.arithmetic-signs{
+    border-radius: 15px;
+    background-color: #002C3E;
+    height: 100%;
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+    width: auto;
+}
+.num-button{
+    border: none;
+    border-radius: 100%;
+    height: 45px;
+    width: 45px;
+    background-color: #F2E1D8;
+    font-size: 23px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+.num-button:hover{
+    background-color: #b4b4b4;
+}
+.num-button:active{
+    transform: scale(0.9);
+    transition: 0.1s ease;
+}
+.arith-button{
+    border: none;
+    border-radius: 20%;
+    height: 60px;
+    width: 60px;
+    background-color: #F2E1D8;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+.arith-button:hover{
+    background-color: #b4b4b4;
+}
+.arith-button:active{
+    transform: scale(0.9);
+    transition: 0.1s ease;
+}
